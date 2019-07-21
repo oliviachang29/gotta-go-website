@@ -1,0 +1,152 @@
+html, body {
+	height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  font-family: Airbnb Cereal App,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+#hero {
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+#hero-img-container {
+	display: flex;
+	@media (max-width: 792px) {
+		justify-content: center;
+	}
+	justify-content: flex-end;
+}
+
+#hero-img {
+	@media (max-width: 792px) {
+		height: 80vh;
+	}
+	height: 100vh;
+	width: auto;
+}
+
+#hero-text {
+	width: 80%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	justify-content: center;
+	/*align-items: center;*/
+	@media (max-width: 792px) {
+		width: 100%;
+		text-align: center;
+	}
+	h1 {
+		font-size: 65px;
+		margin-bottom: 10px;
+	}
+	p {
+		font-size: 20px;
+	}
+	padding-bottom: 30px
+}
+
+#contact-link {
+	@media (max-width: 792px) {
+		display: none;
+	}
+}
+
+.top-right-link {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 30px;
+}
+
+#submit-form {
+	padding: 150px 0;
+	width: 80%;
+	margin: 0 auto;
+
+	h2 {
+		margin-bottom: 40px;
+	}
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+input, textarea {
+	padding: 10px;
+	font-size: 16px;
+	border-radius: 3px;
+	border: none;
+	background-color: #FAFAFA;
+	margin-bottom: 10px;
+	transition: .4s all;
+	&:focus, &:hover {
+		background-color: white;
+		color: black;
+	}
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.honeypot {
+	display: none;
+}
+
+button {
+	padding: 20px 10px;
+	width: 200px;
+	background-color: transparent;
+	border-radius: 100px;
+	border: 2px solid black;
+	transition: .2s all;
+	&:hover {
+		background-color: black;
+		color: white;
+		cursor: pointer;
+	}
+}
+.submit-button {
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+}
+
+#copyright {
+	color: gray;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+main {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#success-text {
+	@media (max-width: 792px) {
+		width: 80%;
+	}
+	width: 50%;
+	text-align: center;
+	h1 {
+		margin-bottom: 30px
+	}
+}

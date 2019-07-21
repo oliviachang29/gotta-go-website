@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+<a class="top-right-link" id="contact-link" href="mailto:hello@oliviachang.me">Contact</a>
+
+<div class="container">
+	<section id="hero">
+		<div class="row">
+			<div class="col-md-6">
+				<div id="hero-img-container">
+					<img id="hero-img" src="/assets/images/gotta-go.png">
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div id="hero-text">
+					<h1>Gotta Go</h1>
+					<p>Helping the homeless find accessible public bathrooms.</p>
+					<p>Text your location to <b>(805) TOILET3.</b></p>
+				</div>
+			</div>
+		</div>
+		
+	</section>
+
+	<section id="submit-form">
+		<h2>Submit a bathroom</h2>
+		<form name="submit-bathroom" method="POST" action="/success" netlify netlify-honeypot="bot-field">
+		  	<input type="text" name="address" placeholder="Address" />
+		  	<input type="text" name="private" placeholder="Is this a private bathroom?" />
+		  	<input type="text" name="provider" placeholder="Bathroom provider" />
+			<textarea name="message" placeholder="Any additional notes?"></textarea>
+			<div data-netlify-recaptcha="true"></div>
+			<div class="honeypot"><input name="bot-field" /></div>
+			<div class="submit-button">
+		    	<button type="submit"><span>Submit</span></button>
+		    </div>
+		</form>
+	</section>
+	<p id="copyright">(c) &copy;<script>new Date().getFullYear()>2010&&document.write(new Date().getFullYear());</script> Olivia Chang. All rights reserved.</p>
+</a>
