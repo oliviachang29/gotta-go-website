@@ -1,3 +1,20 @@
+@font-face {
+   font-family: Airbnb Cereal App;
+   font-weight: normal;
+   font-style: normal;
+   src: url('/assets/fonts/AirbnbCereal-Book.ttf');
+} 
+
+@font-face {
+   font-family: Airbnb Cereal App;
+   font-weight: bold;
+   font-style: normal;
+   src: url('/assets/fonts/AirbnbCereal-Medium.ttf');
+} 
+
+h1, h2 {
+	font-weight: bold;
+}
 a {
 	color: black;
 	transition: 0.2s all;
